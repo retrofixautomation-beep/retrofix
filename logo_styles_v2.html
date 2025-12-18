@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Placement Samples</title>
+    <style>
+        :root {
+            --primary-color: #263238; /* Deep Blue Grey */
+            --secondary-color: #37474f;
+            --accent-color: #FF5722; /* Industrial Orange */
+            --bg-white: #ffffff;
+            --nav-height: 80px;
+            --text-light: #757575;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+
+        .sample-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .sample-card {
+            background: white;
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .sample-label {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* Mock Navigation Bar Styles */
+        .mock-nav {
+            background-color: var(--bg-white);
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Original Text Styles */
+        .logo-text-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 1.1;
+        }
+
+        .logo-main {
+            font-weight: 400;
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+        }
+
+        .logo-main span {
+            font-weight: 900;
+            color: #1565C0; /* Engineering Blue */
+        }
+
+        .logo-sub {
+            font-size: 0.7rem;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        /* Option Specific Styles */
+        
+        /* Option 1: Standard Fit */
+        .opt1-img {
+            height: 40px;
+            width: auto;
+        }
+
+        /* Option 2: Larger Logo */
+        .opt2-img {
+            height: 60px;
+            width: auto;
+        }
+
+        /* Option 3: Circle Background */
+        .opt3-img {
+            height: 50px;
+            width: 50px;
+            object-fit: contain;
+            background: #fff;
+            border-radius: 50%;
+            padding: 2px;
+            border: 2px solid #1565C0;
+        }
+
+        /* Option 4: Square with soft shadow */
+        .opt4-img {
+            height: 55px;
+            width: auto;
+            filter: drop-shadow(0 4px 4px rgba(0,0,0,0.15));
+        }
+
+        /* Option 5: Logo Only (Before Text, slightly overlapping or distinct) */
+        .opt5-conn {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .opt5-img {
+            height: 48px;
+        }
+        .opt5-border-right {
+           border-right: 1px solid #ddd;
+           padding-right: 15px;
+           margin-right: 0px; 
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="sample-container">
+    <h1>Logo Placement Styles</h1>
+    <p>Here are a few ways to integrate your new logo before the main headline "Retrofix".</p>
+
+    <!-- Style 1 -->
+    <div class="sample-card">
+        <div class="sample-label">Style 1: Standard Integration</div>
+        <p>Keeps the original balanced proportions. The logo is sized to match the text height.</p>
+        <div class="mock-nav">
+            <a href="#" class="logo">
+                <img src="retrofix_logo_new.png" alt="Logo" class="opt1-img">
+                <div class="logo-text-col">
+                    <div class="logo-main"><span>Retrofix</span> Automation Engineering Services</div>
+                    <div class="logo-sub">a specialized unit of MALIKAPURAKKAL ENTERPRISES LLP.</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Style 2 -->
+    <div class="sample-card">
+        <div class="sample-label">Style 2: Prominent Logo</div>
+        <p>A larger logo size (60px) to make the brand mark stand out more against the text.</p>
+        <div class="mock-nav">
+            <a href="#" class="logo">
+                <img src="retrofix_logo_new.png" alt="Logo" class="opt2-img">
+                <div class="logo-text-col">
+                    <div class="logo-main"><span>Retrofix</span> Automation Engineering Services</div>
+                    <div class="logo-sub">a specialized unit of MALIKAPURAKKAL ENTERPRISES LLP.</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Style 3 -->
+    <div class="sample-card">
+        <div class="sample-label">Style 3: Badge / Circle Style</div>
+        <p>Enclosed in a circle with a border matching the blue brand color. Cleaner separation.</p>
+        <div class="mock-nav">
+            <a href="#" class="logo">
+                <img src="retrofix_logo_new.png" alt="Logo" class="opt3-img">
+                <div class="logo-text-col">
+                    <div class="logo-main"><span>Retrofix</span> Automation Engineering Services</div>
+                    <div class="logo-sub">a specialized unit of MALIKAPURAKKAL ENTERPRISES LLP.</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Style 4 -->
+    <div class="sample-card">
+        <div class="sample-label">Style 4: Depth & Shadow</div>
+        <p>Adds a subtle drop shadow to the logo to give it depth and make it pop from the header.</p>
+        <div class="mock-nav">
+            <a href="#" class="logo">
+                <img src="retrofix_logo_new.png" alt="Logo" class="opt4-img">
+                <div class="logo-text-col">
+                    <div class="logo-main"><span>Retrofix</span> Automation Engineering Services</div>
+                    <div class="logo-sub">a specialized unit of MALIKAPURAKKAL ENTERPRISES LLP.</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+     <!-- Style 5 -->
+     <div class="sample-card">
+        <div class="sample-label">Style 5: Separated Layout</div>
+        <p>Adds a divider between the logo and the text for a very structured corporate look.</p>
+        <div class="mock-nav">
+            <a href="#" class="logo">
+                <div class="opt5-conn opt5-border-right">
+                    <img src="retrofix_logo_new.png" alt="Logo" class="opt5-img">
+                </div>
+                <div class="logo-text-col">
+                    <div class="logo-main"><span>Retrofix</span> Automation Engineering Services</div>
+                    <div class="logo-sub">a specialized unit of MALIKAPURAKKAL ENTERPRISES LLP.</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

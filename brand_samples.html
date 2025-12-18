@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Name Options</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 40px;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .sample-container {
+            margin-bottom: 40px;
+            padding: 0;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .label {
+            position: absolute;
+            top: -25px;
+            left: 0;
+            background: #263238;
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .nav-mock {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Base Reset */
+        .logo-text {
+            text-decoration: none;
+            color: #263238;
+            white-space: nowrap;
+        }
+
+        /* Option 1: All Caps, Orange Highlight */
+        .opt-1 .logo-text {
+            font-weight: 800;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .opt-1 span {
+            color: #FF5722;
+        }
+
+        /* Option 2: Title Case, Orange Highlight */
+        .opt-2 .logo-text {
+            font-weight: 700;
+            font-size: 1.6rem;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .opt-2 span {
+            color: #FF5722;
+        }
+
+        /* Option 3: Tech Style - Mono varied weights */
+        .opt-3 .logo-text {
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #455A64;
+        }
+
+        .opt-3 span {
+            font-weight: 900;
+            color: #FF5722;
+            background: #f1f1f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        /* Option 4: Corporate Clean - Dark Highlight */
+        .opt-4 .logo-text {
+            font-weight: 400;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #78909c;
+        }
+
+        .opt-4 span {
+            font-weight: 900;
+            color: #263238;
+            border-bottom: 3px solid #FF5722;
+        }
+
+        /* Option 5: Engineering Blue - Bold/Regular */
+        .opt-5 .logo-text {
+            font-weight: 400;
+            font-size: 1.6rem;
+            color: #37474f;
+        }
+
+        .opt-5 span {
+            font-weight: 900;
+            color: #1565C0;
+            /* Engineering Blue */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="text-align:center; margin-bottom: 60px;">Brand Name Style Options</h2>
+
+    <!-- Option 1 -->
+    <div class="sample-container opt-1">
+        <div class="label">Option 1: Industrial Uppercase</div>
+        <div class="nav-mock">
+            <div class="logo-text"><span>Retrofix</span> Automation Engineering Services</div>
+        </div>
+    </div>
+
+    <!-- Option 2 -->
+    <div class="sample-container opt-2">
+        <div class="label">Option 2: Modern Professional</div>
+        <div class="nav-mock">
+            <div class="logo-text"><span>Retrofix</span> Automation Engineering Services</div>
+        </div>
+    </div>
+
+    <!-- Option 3 -->
+    <div class="sample-container opt-3">
+        <div class="label">Option 3: Tech Lab</div>
+        <div class="nav-mock">
+            <div class="logo-text"><span>RETROFIX</span> AUTOMATION ENGINEERING SERVICES</div>
+        </div>
+    </div>
+
+    <!-- Option 4 -->
+    <div class="sample-container opt-4">
+        <div class="label">Option 4: Corporate Minimal</div>
+        <div class="nav-mock">
+            <div class="logo-text"><span>Retrofix</span> Automation Engineering Services</div>
+        </div>
+    </div>
+
+    <!-- Option 5 -->
+    <div class="sample-container opt-5">
+        <div class="label">Option 5: Engineering Blue</div>
+        <div class="nav-mock">
+            <div class="logo-text"><span>Retrofix</span> Automation Engineering Services</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

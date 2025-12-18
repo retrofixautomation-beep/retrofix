@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading Style Options</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            padding: 40px;
+        }
+
+        .sample-container {
+            margin-bottom: 60px;
+            padding: 40px;
+            border: 1px solid #555;
+            background-image: url('hero-bg.jpg');
+            /* Use the actual background for context */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Overlay to match current site opacity */
+        .sample-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .sample-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .label {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #FF5722;
+            color: white;
+            padding: 5px 15px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            z-index: 3;
+        }
+
+        /* Option 1: Current Style */
+        .style-1 h1 {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            font-size: 3rem;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        /* Option 2: Industrial Impact (All Caps, Heavy) */
+        .style-2 h1 {
+            font-family: 'Arial Black', 'Helvetica', sans-serif;
+            font-weight: 900;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Option 3: Modern Minimalist (Thin, High Tracking) */
+        .style-3 h1 {
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 300;
+            font-size: 3.2rem;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+        }
+
+        /* Option 4: Technical Terminal (Monospace-ish look) */
+        .style-4 h1 {
+            font-family: 'Courier New', monospace;
+            font-weight: 700;
+            font-size: 2.8rem;
+            border-bottom: 2px solid #FF5722;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        /* Option 5: Highlight Accent */
+        .style-5 h1 {
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 800;
+            font-size: 3.5rem;
+        }
+
+        .style-5 h1 span {
+            color: #FF5722;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="color:white; text-align:center; margin-bottom: 40px;">Heading Style Options</h2>
+
+    <!-- Option 1 -->
+    <div class="sample-container style-1">
+        <div class="label">Option 1: Current</div>
+        <div class="sample-overlay"></div>
+        <div class="sample-content">
+            <h1>We Fix What Others Couldn't. Guaranteed.</h1>
+        </div>
+    </div>
+
+    <!-- Option 2 -->
+    <div class="sample-container style-2">
+        <div class="label">Option 2: Industrial Heavy</div>
+        <div class="sample-overlay"></div>
+        <div class="sample-content">
+            <h1>We Fix What Others Couldn't. Guaranteed.</h1>
+        </div>
+    </div>
+
+    <!-- Option 3 -->
+    <div class="sample-container style-3">
+        <div class="label">Option 3: Modern Sleek</div>
+        <div class="sample-overlay"></div>
+        <div class="sample-content">
+            <h1>We Fix What Others Couldn't. Guaranteed.</h1>
+        </div>
+    </div>
+
+    <!-- Option 4 -->
+    <div class="sample-container style-4">
+        <div class="label">Option 4: Technical Code</div>
+        <div class="sample-overlay"></div>
+        <div class="sample-content">
+            <h1>We Fix What Others Couldn't. Guaranteed.</h1>
+        </div>
+    </div>
+
+    <!-- Option 5 -->
+    <div class="sample-container style-5">
+        <div class="label">Option 5: Accent Highlighting</div>
+        <div class="sample-overlay"></div>
+        <div class="sample-content">
+            <h1>We Fix <span>What Others Couldn't</span>. Guaranteed.</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
